@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "CommonJS",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "rootDirs": ["src"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "config": ["./config/*"],
+      "typings": ["./typings"]
+    },
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  }
+}

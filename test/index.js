@@ -18,7 +18,7 @@ co(function*() {
   const code = fs.readFileSync(
     path.resolve(__dirname, '../src/index.js'),
     'utf8'
-  );
+  ).replace("exports.default","module.exports");
   const renderInfo = vm.run(code)(data, {
     prettier: prettier,
     _: _,
